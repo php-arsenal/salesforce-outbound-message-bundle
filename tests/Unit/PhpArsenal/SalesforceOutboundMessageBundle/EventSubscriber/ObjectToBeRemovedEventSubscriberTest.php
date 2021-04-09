@@ -86,7 +86,7 @@ class ObjectToBeRemovedEventSubscriberTest extends TestCase
             ->method('getNewDocument')
             ->willReturn($objectToBeRemovedMock);
 
-        $objectClassNameStub = 'Comsave\Document\Account';
+        $objectClassNameStub = 'PhpArsenal\Document\Account';
 
         $this->outboundMessageDocumentClassNameFactory->expects($this->once())
             ->method('getClassName')
@@ -145,7 +145,7 @@ class ObjectToBeRemovedEventSubscriberTest extends TestCase
             ->method('getNewDocument')
             ->willReturn($objectToBeRemovedMock);
 
-        $objectClassNameStub = 'Comsave\Document\Account';
+        $objectClassNameStub = 'PhpArsenal\Document\Account';
 
         $this->outboundMessageDocumentClassNameFactory->expects($this->once())
             ->method('getClassName')

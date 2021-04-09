@@ -26,8 +26,8 @@ use Tests\Stub\DocumentWithSalesforceFields;
 
 /**
  * Class SoapRequestHandlerTest
- * @package Tests\Unit\Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler
- * @coversDefaultClass \Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler\SoapRequestHandler
+ * @package Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler
+ * @coversDefaultClass \PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler\SoapRequestHandler
  */
 class SoapRequestHandlerTest extends TestCase
 {
