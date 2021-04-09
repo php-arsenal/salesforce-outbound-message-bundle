@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Unit\Comsave\SalesforceOutboundMessageBundle\DependencyInjection;
+namespace Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\DependencyInjection;
 
-use Comsave\SalesforceOutboundMessageBundle\DependencyInjection\Configuration;
+use PhpArsenal\SalesforceOutboundMessageBundle\DependencyInjection\Configuration;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Comsave\SalesforceOutboundMessageBundle\DependencyInjection\Configuration
+ * @coversDefaultClass \PhpArsenal\SalesforceOutboundMessageBundle\DependencyInjection\Configuration
  */
 class ConfigurationTest extends TestCase
 {
@@ -20,7 +20,7 @@ class ConfigurationTest extends TestCase
             'wsdl_directory' => '%kernel.project_dir%/Resources/wsdl_documents',
             'document_paths' => [
                 'ObjectToBeRemoved__c' => [
-                    'path' => 'Comsave\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved',
+                    'path' => 'PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved',
                 ],
             ],
         ];

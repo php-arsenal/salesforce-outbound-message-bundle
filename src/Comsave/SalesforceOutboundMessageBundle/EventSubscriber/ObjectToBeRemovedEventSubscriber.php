@@ -1,11 +1,11 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\EventSubscriber;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\EventSubscriber;
 
-use Comsave\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved;
-use Comsave\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
-use Comsave\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
-use Comsave\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
+use PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved;
+use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
+use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Exception;
 use LogicItLab\Salesforce\MapperBundle\Mapper;

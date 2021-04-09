@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Interfaces;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Interfaces;
 
 interface DocumentInterface
 {

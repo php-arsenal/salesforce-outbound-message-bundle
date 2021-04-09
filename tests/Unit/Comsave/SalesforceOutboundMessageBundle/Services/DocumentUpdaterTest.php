@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Comsave\SalesforceOutboundMessageBundle\Services;
+namespace Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\Services;
 
-use Comsave\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
-use Comsave\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
 use Doctrine\Common\Annotations\AnnotationReader;
 use LogicItLab\Salesforce\MapperBundle\Model\Product;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 use Tests\Stub\DocumentWithSalesforceFields;
 
 /**
- * @coversDefaultClass \Comsave\SalesforceOutboundMessageBundle\Services\DocumentUpdater
+ * @coversDefaultClass \PhpArsenal\SalesforceOutboundMessageBundle\Services\DocumentUpdater
  */
 class DocumentUpdaterTest extends TestCase
 {

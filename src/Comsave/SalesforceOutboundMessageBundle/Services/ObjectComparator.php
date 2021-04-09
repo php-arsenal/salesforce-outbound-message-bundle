@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Services;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Services;
 
 class ObjectComparator
 {

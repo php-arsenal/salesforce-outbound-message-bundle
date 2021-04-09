@@ -1,10 +1,10 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Services\Builder;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder;
 
-use Comsave\SalesforceOutboundMessageBundle\Exception\SalesforceException;
-use Comsave\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
-use Comsave\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory;
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory;
 use SoapServer;
 
 class OutboundMessageSoapServerBuilder

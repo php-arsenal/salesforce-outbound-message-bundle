@@ -2,8 +2,8 @@
 
 namespace SalesforceOutboundMessageBundle\Services\Factory;
 
-use Comsave\SalesforceOutboundMessageBundle\Exception\DocumentNotFoundException;
-use Comsave\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\DocumentNotFoundException;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -18,12 +18,12 @@ class SalesforceObjectDocumentMetadataFactoryTest extends TestCase
     {
         $documentLocations = [
             'Account' => [
-                'path' => 'App\Comsave\Document\Account',
+                'path' => 'App\PhpArsenal\Document\Account',
             ]
         ];
 
         $this->assertEquals(
-            'App\Comsave\Document\Account',
+            'App\PhpArsenal\Document\Account',
             (new SalesforceObjectDocumentMetadataFactory($documentLocations))->getClassName('Account')
         );
     }
@@ -35,7 +35,7 @@ class SalesforceObjectDocumentMetadataFactoryTest extends TestCase
     {
         $documentLocations = [
             'Account2' => [
-                'path' => 'App\Comsave\Document\Account2',
+                'path' => 'App\PhpArsenal\Document\Account2',
             ]
         ];
 

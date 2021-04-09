@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Event;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Event;
 
 use Symfony\Component\EventDispatcher\Event;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Repository;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Repository;
 
 use Doctrine\ODM\MongoDB\Repository\DocumentRepository;
 

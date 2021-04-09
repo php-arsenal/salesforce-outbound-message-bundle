@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Unit\Comsave\SalesforceOutboundMessageBundle\Services;
+namespace Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\Services;
 
-use Comsave\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
 use LogicItLab\Salesforce\MapperBundle\Model\Product;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Comsave\SalesforceOutboundMessageBundle\Services\PropertyAccessor
+ * @coversDefaultClass \PhpArsenal\SalesforceOutboundMessageBundle\Services\PropertyAccessor
  */
 class PropertyAccessorTest extends TestCase
 {

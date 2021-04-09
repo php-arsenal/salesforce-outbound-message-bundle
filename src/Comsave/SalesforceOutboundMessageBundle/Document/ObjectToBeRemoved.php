@@ -1,13 +1,13 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Document;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Document;
 
-use Comsave\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
+use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 use LogicItLab\Salesforce\MapperBundle\Annotation as Salesforce;
 
 /**
- * @ODM\Document(collection="objectsToBeRemoved", repositoryClass="Comsave\SalesforceOutboundMessageBundle\Repository\ObjectToBeRemovedRepository")
+ * @ODM\Document(collection="objectsToBeRemoved", repositoryClass="PhpArsenal\SalesforceOutboundMessageBundle\Repository\ObjectToBeRemovedRepository")
  * @Salesforce\SObject(name="ObjectToBeRemoved__c")
  */
 class ObjectToBeRemoved implements DocumentInterface

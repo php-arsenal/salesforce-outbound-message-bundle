@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle;
+namespace PhpArsenal\SalesforceOutboundMessageBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

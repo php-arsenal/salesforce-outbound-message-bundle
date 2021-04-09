@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\Unit\Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler;
+namespace Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler;
 
-use Comsave\SalesforceOutboundMessageBundle\Services\Builder\OutboundMessageSoapServerBuilder;
-use Comsave\SalesforceOutboundMessageBundle\Services\Builder\SoapResponseBuilder;
-use Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler\OutboundMessageRequestHandler;
-use Comsave\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder\OutboundMessageSoapServerBuilder;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder\SoapResponseBuilder;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler\OutboundMessageRequestHandler;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use SoapServer;

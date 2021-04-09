@@ -1,11 +1,11 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Services\Builder;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder;
 
-use Comsave\SalesforceOutboundMessageBundle\Interfaces\SoapRequestHandlerInterface;
-use Comsave\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
-use Comsave\SalesforceOutboundMessageBundle\Services\ObjectComparator;
-use Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler\SoapRequestHandler;
+use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\SoapRequestHandlerInterface;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\ObjectComparator;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler\SoapRequestHandler;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use LogicItLab\Salesforce\MapperBundle\Annotation\AnnotationReader;
 use LogicItLab\Salesforce\MapperBundle\Mapper;

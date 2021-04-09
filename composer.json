@@ -1,21 +1,21 @@
 {
-  "name": "comsave/salesforce-outbound-message-bundle",
+  "name": "php-arsenal/salesforce-outbound-message-bundle",
   "type": "symfony-bundle",
   "description": "This bundle allows you to easily process outbound messages sent by Salesforce.",
-  "homepage": "https://github.com/comsave/salesforce-outbound-message-bundle",
+  "homepage": "https://github.com/php-arsenal/salesforce-outbound-message-bundle",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Comsave\\": "src/Comsave/"
+      "PhpArsenal\\": "src/PhpArsenal/"
     },
     "files": [
-      "src/Comsave/SalesforceOutboundMessageBundle/functions.php"
+      "src/PhpArsenal/SalesforceOutboundMessageBundle/functions.php"
     ]
   },
   "autoload-dev": {
     "files": [
-      "src/Comsave/SalesforceOutboundMessageBundle/functions.php",
-      "vendor/comsave/salesforce-mapper-bundle/src/LogicItLab/Salesforce/MapperBundle/Annotation/Field.php"
+      "src/PhpArsenal/SalesforceOutboundMessageBundle/functions.php",
+      "vendor/php-arsenal/salesforce-mapper-bundle/src/LogicItLab/Salesforce/MapperBundle/Annotation/Field.php"
     ],
     "psr-4": {
       "Tests\\": "tests/"
@@ -25,7 +25,7 @@
     "php": ">=7.2",
     "ext-json": ">=1.6",
     "ext-soap": ">=7.2",
-    "comsave/salesforce-mapper-bundle": "^3.4.0",
+    "php-arsenal/salesforce-mapper-bundle": "^3.4.0",
     "doctrine/mongodb-odm": "^1.1|^2.0",
     "symfony/config": "^3.4|^4.3",
     "symfony/dependency-injection": "^3.4|^4.3",

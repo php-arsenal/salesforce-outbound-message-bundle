@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Unit\Comsave\SalesforceOutboundMessageBundle\Services;
+namespace Tests\Unit\PhpArsenal\SalesforceOutboundMessageBundle\Services;
 
-use Comsave\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Comsave\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver
+ * @coversDefaultClass \PhpArsenal\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver
  */
 class OutboundMessageObjectNameRetrieverTest extends TestCase
 {
@@ -60,7 +60,7 @@ class OutboundMessageObjectNameRetrieverTest extends TestCase
 
     /**
      * @covers ::resolve()
-     * @expectedException \Comsave\SalesforceOutboundMessageBundle\Exception\SalesforceException
+     * @expectedException \PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException
      */
     public function testRetrieveThrowsExceptionOnInvalidXml()
     {
@@ -96,7 +96,7 @@ class OutboundMessageObjectNameRetrieverTest extends TestCase
 
     /**
      * @covers ::resolve()
-     * @expectedException \Comsave\SalesforceOutboundMessageBundle\Exception\SalesforceException
+     * @expectedException \PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException
      */
     public function testRetrieveThrowsExceptionOnEmptyXml()
     {

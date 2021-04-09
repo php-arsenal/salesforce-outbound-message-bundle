@@ -4,19 +4,19 @@ services:
     autoconfigure: true
     public: false
 
-  Comsave\SalesforceOutboundMessageBundle\:
+  PhpArsenal\SalesforceOutboundMessageBundle\:
     resource: '../../*'
     exclude: '../../{DependencyInjection,Entity,Exception,Migrations,Tests,Kernel.php,functions.php}'
 
-  Comsave\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory:
+  PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory:
     arguments:
       - '%comsave_salesforce_outbound_message.wsdl_directory%'
 
-  Comsave\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory:
+  PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory:
     arguments:
       - '%comsave_salesforce_outbound_message.document_paths%'
 
-  Comsave\SalesforceOutboundMessageBundle\Services\Builder\SoapServerBuilder:
+  PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder\SoapServerBuilder:
     arguments:
       - '%comsave_salesforce_outbound_message.wsdl_cache%'
 

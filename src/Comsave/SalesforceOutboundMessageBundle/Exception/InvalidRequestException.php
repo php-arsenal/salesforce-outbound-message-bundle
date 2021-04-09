@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Exception;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Exception;
 
 class InvalidRequestException extends SalesforceException
 {

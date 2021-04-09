@@ -24,7 +24,7 @@ comsave_salesforce_outbound_message:
     document_paths:
       # ... your other document
       ObjectToBeRemoved__c:
-        path: 'Comsave\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved'
+        path: 'PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved'
 ```
 
 ## Required setup in Salesforce

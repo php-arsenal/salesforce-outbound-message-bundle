@@ -1,8 +1,8 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Services\Builder;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder;
 
-use Comsave\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
+use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
 
 class OutboundMessageBeforeFlushEventBuilder
 {

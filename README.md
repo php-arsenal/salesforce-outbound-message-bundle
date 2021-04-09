@@ -2,10 +2,10 @@
 
 Create, update, remove objects in Symfony sent through Salesforce outbound messages. 
 
-[![Release](https://img.shields.io/github/v/release/comsave/salesforce-outbound-message-bundle)](https://github.com/comsave/salesforce-outbound-message-bundle/releases)
-[![Travis](https://img.shields.io/travis/comsave/salesforce-outbound-message-bundle)](https://travis-ci.org/comsave/salesforce-outbound-message-bundle)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/comsave/salesforce-outbound-message-bundle)](https://codeclimate.com/github/comsave/salesforce-outbound-message-bundle)
-[![Packagist](https://img.shields.io/packagist/dt/comsave/salesforce-outbound-message-bundle)](https://packagist.org/packages/comsave/salesforce-outbound-message-bundle)
+[![Release](https://img.shields.io/github/v/release/php-arsenal/salesforce-outbound-message-bundle)](https://github.com/php-arsenal/salesforce-outbound-message-bundle/releases)
+[![Travis](https://img.shields.io/travis/php-arsenal/salesforce-outbound-message-bundle)](https://travis-ci.org/php-arsenal/salesforce-outbound-message-bundle)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/php-arsenal/salesforce-outbound-message-bundle)](https://codeclimate.com/github/php-arsenal/salesforce-outbound-message-bundle)
+[![Packagist](https://img.shields.io/packagist/dt/php-arsenal/salesforce-outbound-message-bundle)](https://packagist.org/packages/php-arsenal/salesforce-outbound-message-bundle)
 
 ---
 
@@ -14,7 +14,7 @@ Create, update, remove objects in Symfony sent through Salesforce outbound messa
 This bundle assumes you're using:
 
 1) MongoDB database (and specifically [`doctrine/mongodb-odm`](https://github.com/doctrine/mongodb-odm)).
-2) [`comsave/salesforce-mapper-bundle`](https://github.com/comsave/salesforce-mapper-bundle) for Salesforce object mapping to your MongoDB `Document` classes.
+2) [`php-arsenal/salesforce-mapper-bundle`](https://github.com/php-arsenal/salesforce-mapper-bundle) for Salesforce object mapping to your MongoDB `Document` classes.
 
 ## Bundle features
 
@@ -26,16 +26,16 @@ This bundle assumes you're using:
 
 ## Installation
 
-* ```composer require comsave/salesforce-outbound-message-bundle``` 
+* ```composer require php-arsenal/salesforce-outbound-message-bundle``` 
 * Register the bundle in your `AppKernel.php` by adding 
-```new Comsave\SalesforceOutboundMessageBundle\ComsaveSalesforceOutboundMessageBundle() ```
+```new PhpArsenal\SalesforceOutboundMessageBundle\ComsaveSalesforceOutboundMessageBundle() ```
 * To handle the Salesforce's incoming outbound messages create a route (for example `/sync`) and a method to a controller: 
 ```php
 <?php
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Comsave\SalesforceOutboundMessageBundle\Services\RequestHandler\OutboundMessageRequestHandler;
+use PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler\OutboundMessageRequestHandler;
 
 class OutboundMessageController extends Controller
 {
@@ -68,7 +68,7 @@ comsave_salesforce_outbound_message:
 ```php
 <?php
 
-use Comsave\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
+use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
 use LogicItLab\Salesforce\MapperBundle\Model\Account as BaseAccount;
 
 class Account extends BaseAccount implements DocumentInterface
@@ -81,8 +81,8 @@ class Account extends BaseAccount implements DocumentInterface
 
 namespace YourNamespace\EventSubscriber;
 
-use Comsave\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
-use Comsave\SalesforceOutboundMessageBundle\Event\OutboundMessageAfterFlushEvent;
+use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
+use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageAfterFlushEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Comsave\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface; 
 use Comsave\Webservice\Core\UserBundle\Document\Account;

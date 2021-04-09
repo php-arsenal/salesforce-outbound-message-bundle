@@ -1,9 +1,9 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Interfaces;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Interfaces;
 
-use Comsave\SalesforceOutboundMessageBundle\Model\NotificationRequest;
-use Comsave\SalesforceOutboundMessageBundle\Model\NotificationResponse;
+use PhpArsenal\SalesforceOutboundMessageBundle\Model\NotificationRequest;
+use PhpArsenal\SalesforceOutboundMessageBundle\Model\NotificationResponse;
 
 interface SoapRequestHandlerInterface
 {

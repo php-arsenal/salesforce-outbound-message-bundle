@@ -1,8 +1,8 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\Services\Factory;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory;
 
-use Comsave\SalesforceOutboundMessageBundle\Exception\DocumentNotFoundException;
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\DocumentNotFoundException;
 
 class SalesforceObjectDocumentMetadataFactory
 {

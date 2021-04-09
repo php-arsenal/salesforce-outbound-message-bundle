@@ -1,6 +1,6 @@
 <?php
 
-namespace Comsave\SalesforceOutboundMessageBundle\DependencyInjection;
+namespace PhpArsenal\SalesforceOutboundMessageBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
