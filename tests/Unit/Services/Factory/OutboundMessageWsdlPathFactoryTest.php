@@ -2,6 +2,8 @@
 
 namespace Tests\Unit\Services\Factory;
 
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException;
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\WsdlFileNotFound;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory;
 use PHPUnit\Framework\TestCase;
 
@@ -33,11 +35,11 @@ class OutboundMessageWsdlPathFactoryTest extends TestCase
 
     /**
      * @covers ::getWsdlPath()
-     * @expectedException \PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException
      */
     public function testGetWsdlPathThrowsExceptionWhenFileCantBeFound()
     {
         $objectName = 'DoesNotExist';
+        $this->expectException(SalesforceException::class);
         $this->outboundMessageWsdlPathFactory->getWsdlPath($objectName);
     }
 }

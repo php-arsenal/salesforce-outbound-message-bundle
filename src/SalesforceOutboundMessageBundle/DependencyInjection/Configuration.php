@@ -2,21 +2,16 @@
 
 namespace PhpArsenal\SalesforceOutboundMessageBundle\DependencyInjection;
 
-use Symfony\Component\Config\Definition\Builder\ScalarNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
-use Symfony\Component\HttpKernel\Kernel;
 
 class Configuration implements ConfigurationInterface
 {
-    /** @var string */
-    private $symfonyVersion = Kernel::VERSION;
-
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('arsenal_salesforce_outbound_message');
-        $rootNode
+        $treeBuilder = new TreeBuilder('arsenal_salesforce_outbound_message');
+        $treeBuilder
+            ->getRootNode()
             ->children()
                 ->scalarNode('wsdl_cache')->defaultValue('WSDL_CACHE_DISK')->end()
                 ->scalarNode('wsdl_directory')->isRequired()->end()

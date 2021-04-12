@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\Services;
 
+use PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\Resolver\OutboundMessageObjectNameResolver;
 use PHPUnit\Framework\TestCase;
 
@@ -60,7 +61,6 @@ class OutboundMessageObjectNameRetrieverTest extends TestCase
 
     /**
      * @covers ::resolve()
-     * @expectedException \PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException
      */
     public function testRetrieveThrowsExceptionOnInvalidXml()
     {
@@ -91,17 +91,18 @@ class OutboundMessageObjectNameRetrieverTest extends TestCase
                  </soapenv:Body>
                 </soapenv:Envelope>';
 
+        $this->expectException(SalesforceException::class);
         $this->outboundMessageObjectNameResolver->resolve($xml);
     }
 
     /**
      * @covers ::resolve()
-     * @expectedException \PhpArsenal\SalesforceOutboundMessageBundle\Exception\SalesforceException
      */
     public function testRetrieveThrowsExceptionOnEmptyXml()
     {
         $xml = '';
 
+        $this->expectException(SalesforceException::class);
         $this->outboundMessageObjectNameResolver->resolve($xml);
     }
 }

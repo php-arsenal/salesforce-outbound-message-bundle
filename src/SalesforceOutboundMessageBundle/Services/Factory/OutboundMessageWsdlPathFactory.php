@@ -15,7 +15,7 @@ class OutboundMessageWsdlPathFactory implements WsdlPathFactoryInterface
     {
         $this->abstractWsdlPaths = [
             rtrim($wsdlPath, '/'),
-            dirname(__FILE__).'/../../Resources/wsdl',
+            realpath(dirname(__FILE__).'/../../Resources/wsdl'),
         ];
     }
 
