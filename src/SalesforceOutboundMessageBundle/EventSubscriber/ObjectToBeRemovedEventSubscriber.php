@@ -8,7 +8,7 @@ use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Exception;
-use PhpArsenal\Salesforce\MapperBundle\Mapper;
+use PhpArsenal\SalesforceMapperBundle\Mapper;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Throwable;
 

@@ -3,7 +3,7 @@
 namespace Tests\Unit\Services;
 
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
-use PhpArsenal\Salesforce\MapperBundle\Model\Product;
+use PhpArsenal\SalesforceMapperBundle\Model\Product;
 use PHPUnit\Framework\TestCase;
 
 /**

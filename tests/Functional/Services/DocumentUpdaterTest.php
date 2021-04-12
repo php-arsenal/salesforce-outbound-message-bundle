@@ -5,8 +5,8 @@ namespace Tests\Functional\Services;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\PropertyAccessor;
 use Doctrine\Common\Collections\ArrayCollection;
-use PhpArsenal\Salesforce\MapperBundle\Annotation\AnnotationReader;
-use PhpArsenal\Salesforce\MapperBundle\Annotation\Field;
+use PhpArsenal\SalesforceMapperBundle\Annotation\AnnotationReader;
+use PhpArsenal\SalesforceMapperBundle\Annotation\Field;
 use PHPUnit\Framework\TestCase;
 use Tests\Stub\DocumentWithSalesforceFields;
 

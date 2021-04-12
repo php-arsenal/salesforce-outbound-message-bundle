@@ -7,8 +7,8 @@ use PhpArsenal\SalesforceOutboundMessageBundle\Services\DocumentUpdater;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\ObjectComparator;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\RequestHandler\SoapRequestHandler;
 use Doctrine\ODM\MongoDB\DocumentManager;
-use PhpArsenal\Salesforce\MapperBundle\Annotation\AnnotationReader;
-use PhpArsenal\Salesforce\MapperBundle\Mapper;
+use PhpArsenal\SalesforceMapperBundle\Annotation\AnnotationReader;
+use PhpArsenal\SalesforceMapperBundle\Mapper;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 

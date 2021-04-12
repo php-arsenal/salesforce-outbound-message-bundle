@@ -6,6 +6,10 @@
          colors="true"
          backupGlobals="false"
 >
+    <extensions>
+        <extension class="Tests\BypassFinalHook"/>
+    </extensions>
+
     <php>
         <ini name="error_reporting" value="-1"/>
         <ini name="intl.default_locale" value="en"/>

@@ -4,7 +4,7 @@ namespace Tests\Unit\Services\Builder;
 
 use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageAfterFlushEvent;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder\OutboundMessageAfterFlushEventBuilder;
-use PhpArsenal\Salesforce\MapperBundle\Model\AbstractModel;
+use PhpArsenal\SalesforceMapperBundle\Model\AbstractModel;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -4,7 +4,7 @@ namespace PhpArsenal\SalesforceOutboundMessageBundle\Document;
 
 use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
-use PhpArsenal\Salesforce\MapperBundle\Annotation as Salesforce;
+use PhpArsenal\SalesforceMapperBundle\Annotation as Salesforce;
 
 /**
  * @ODM\Document(collection="objectsToBeRemoved", repositoryClass="PhpArsenal\SalesforceOutboundMessageBundle\Repository\ObjectToBeRemovedRepository")

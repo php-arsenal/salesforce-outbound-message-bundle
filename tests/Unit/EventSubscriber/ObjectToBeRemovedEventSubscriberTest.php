@@ -9,8 +9,8 @@ use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
 use PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ODM\MongoDB\Repository\DocumentRepository;
-use PhpArsenal\Salesforce\MapperBundle\Mapper;
-use PhpArsenal\Salesforce\MapperBundle\Model\Account;
+use PhpArsenal\SalesforceMapperBundle\Mapper;
+use PhpArsenal\SalesforceMapperBundle\Model\Account;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
