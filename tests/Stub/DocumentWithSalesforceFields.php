@@ -2,7 +2,7 @@
 
 namespace Tests\Stub;
 
-use LogicItLab\Salesforce\MapperBundle\Annotation as Salesforce;
+use PhpArsenal\Salesforce\MapperBundle\Annotation as Salesforce;
 
 class DocumentWithSalesforceFields
 {

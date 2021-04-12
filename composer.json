@@ -6,16 +6,16 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "PhpArsenal\\": "src/PhpArsenal/"
+      "PhpArsenal\\": "src"
     },
     "files": [
-      "src/PhpArsenal/SalesforceOutboundMessageBundle/functions.php"
+      "src/SalesforceOutboundMessageBundle/functions.php"
     ]
   },
   "autoload-dev": {
     "files": [
-      "src/PhpArsenal/SalesforceOutboundMessageBundle/functions.php",
-      "vendor/php-arsenal/salesforce-mapper-bundle/src/LogicItLab/Salesforce/MapperBundle/Annotation/Field.php"
+      "src/SalesforceOutboundMessageBundle/functions.php",
+      "vendor/php-arsenal/salesforce-mapper-bundle/src/SalesforceMapperBundle/Annotation/Field.php"
     ],
     "psr-4": {
       "Tests\\": "tests/"

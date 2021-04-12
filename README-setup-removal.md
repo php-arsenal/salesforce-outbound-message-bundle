@@ -20,7 +20,7 @@ What happens in the OutboundMessageBundle:
 Add the `ObjectToBeRemoved` document configuration to your `config.yml`.
 
 ```yaml
-comsave_salesforce_outbound_message:
+arsenal_salesforce_outbound_message:
     document_paths:
       # ... your other document
       ObjectToBeRemoved__c:

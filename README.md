@@ -28,7 +28,7 @@ This bundle assumes you're using:
 
 * ```composer require php-arsenal/salesforce-outbound-message-bundle``` 
 * Register the bundle in your `AppKernel.php` by adding 
-```new PhpArsenal\SalesforceOutboundMessageBundle\ComsaveSalesforceOutboundMessageBundle() ```
+```new PhpArsenal\SalesforceOutboundMessageBundle\SalesforceOutboundMessageBundle() ```
 * To handle the Salesforce's incoming outbound messages create a route (for example `/sync`) and a method to a controller: 
 ```php
 <?php
@@ -53,7 +53,7 @@ class OutboundMessageController extends Controller
 ```
 * add the bundle configuration in your `app/config/config.yml`
 ```yaml
-comsave_salesforce_outbound_message:
+arsenal_salesforce_outbound_message:
     # WSDL_CACHE_NONE, WSDL_CACHE_DISK, WSDL_CACHE_MEMORY or WSDL_CACHE_BOTH
     wsdl_cache: 'WSDL_CACHE_DISK'                     
     # An absolute path to Salesforce object WSDL files
@@ -69,7 +69,7 @@ comsave_salesforce_outbound_message:
 <?php
 
 use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface;
-use LogicItLab\Salesforce\MapperBundle\Model\Account as BaseAccount;
+use PhpArsenal\Salesforce\MapperBundle\Model\Account as BaseAccount;
 
 class Account extends BaseAccount implements DocumentInterface
 {
@@ -84,8 +84,8 @@ namespace YourNamespace\EventSubscriber;
 use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageBeforeFlushEvent;
 use PhpArsenal\SalesforceOutboundMessageBundle\Event\OutboundMessageAfterFlushEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Comsave\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface; 
-use Comsave\Webservice\Core\UserBundle\Document\Account;
+use PhpArsenal\SalesforceOutboundMessageBundle\Interfaces\DocumentInterface; 
+use PhpArsenal\Webservice\Core\UserBundle\Document\Account;
 
 class AccountSoapRequestSubscriber implements EventSubscriberInterface
 {

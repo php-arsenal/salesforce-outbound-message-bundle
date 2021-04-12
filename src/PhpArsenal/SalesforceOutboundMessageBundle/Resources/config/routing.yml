@@ -1,3 +1,0 @@
-comsave_salesforce_outbound_message_homepage:
-  path:     /
-  defaults: { _controller: PhpArsenalSalesforceOutboundMessageBundle:Default:index }
