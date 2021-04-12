@@ -3,7 +3,7 @@
 Create, update, remove objects in Symfony sent through Salesforce outbound messages. 
 
 [![Release](https://img.shields.io/github/v/release/php-arsenal/salesforce-outbound-message-bundle)](https://github.com/php-arsenal/salesforce-outbound-message-bundle/releases)
-[![Travis](https://img.shields.io/travis/php-arsenal/salesforce-outbound-message-bundle)](https://travis-ci.org/php-arsenal/salesforce-outbound-message-bundle)
+[![Travis](https://img.shields.io/travis/php-arsenal/salesforce-outbound-message-bundle)](https://travis-ci.com/php-arsenal/salesforce-outbound-message-bundle)
 [![Test Coverage](https://img.shields.io/codeclimate/coverage/php-arsenal/salesforce-outbound-message-bundle)](https://codeclimate.com/github/php-arsenal/salesforce-outbound-message-bundle)
 [![Packagist](https://img.shields.io/packagist/dt/php-arsenal/salesforce-outbound-message-bundle)](https://packagist.org/packages/php-arsenal/salesforce-outbound-message-bundle)
 
