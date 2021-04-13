@@ -10,13 +10,13 @@ services:
 
   PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\OutboundMessageWsdlPathFactory:
     arguments:
-      - '%arsenal_salesforce_outbound_message.wsdl_directory%'
+      - '%salesforce_outbound_message.wsdl_directory%'
 
   PhpArsenal\SalesforceOutboundMessageBundle\Services\Factory\SalesforceObjectDocumentMetadataFactory:
     arguments:
-      - '%arsenal_salesforce_outbound_message.document_paths%'
+      - '%salesforce_outbound_message.document_paths%'
 
   PhpArsenal\SalesforceOutboundMessageBundle\Services\Builder\SoapServerBuilder:
     arguments:
-      - '%arsenal_salesforce_outbound_message.wsdl_cache%'
+      - '%salesforce_outbound_message.wsdl_cache%'
 

@@ -17,7 +17,7 @@ class SalesforceOutboundMessageExtension extends Extension
         DependencyInjectionBuilder::setupConfigurationParameters(
             $container,
             $processedConfiguration,
-            'arsenal.salesforce_outbound_message'
+            'salesforce_outbound_message'
         );
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

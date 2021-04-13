@@ -6,7 +6,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class OutboundMessageAfterFlushEvent extends Event
 {
-    const NAME = 'arsenal.salesforce_outbound_message.after_flush';
+    const NAME = 'salesforce_outbound_message.after_flush';
 
     private $document;
 
