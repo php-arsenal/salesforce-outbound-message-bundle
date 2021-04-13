@@ -16,13 +16,15 @@ class ConfigurationTest extends TestCase
     public function testConfiguration(): void
     {
         $inputOutput = [
-            'wsdl_cache' => 'WSDL_CACHE_NONE',
-            'wsdl_directory' => '%kernel.project_dir%/Resources/wsdl_documents',
-            'document_paths' => [
-                'ObjectToBeRemoved__c' => [
-                    'path' => 'PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved',
+            'salesforce_outbound_message' => [
+                'wsdl_cache' => 'WSDL_CACHE_NONE',
+                'wsdl_directory' => '%kernel.project_dir%/Resources/wsdl_documents',
+                'document_paths' => [
+                    'ObjectToBeRemoved__c' => [
+                        'path' => 'PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved',
+                    ],
                 ],
-            ],
+            ]
         ];
 
         $configuration = new Configuration();
