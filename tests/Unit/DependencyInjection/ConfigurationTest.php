@@ -16,7 +16,7 @@ class ConfigurationTest extends TestCase
     public function testConfiguration(): void
     {
         $inputOutput = [
-            'salesforce_outbound_message' => [
+//            'arsenal_salesforce_outbound_message' => [
                 'wsdl_cache' => 'WSDL_CACHE_NONE',
                 'wsdl_directory' => '%kernel.project_dir%/Resources/wsdl_documents',
                 'document_paths' => [
@@ -24,7 +24,7 @@ class ConfigurationTest extends TestCase
                         'path' => 'PhpArsenal\SalesforceOutboundMessageBundle\Document\ObjectToBeRemoved',
                     ],
                 ],
-            ]
+//            ]
         ];
 
         $configuration = new Configuration();
@@ -32,14 +32,6 @@ class ConfigurationTest extends TestCase
         $configNode = $configuration->getConfigTreeBuilder()->buildTree();
         $resultConfig = $configNode->finalize($configNode->normalize($inputOutput));
 
-        $this->assertEquals(array_merge_recursive($inputOutput, [
-            'salesforce_outbound_message' => [
-                'document_paths' => [
-                    'ObjectToBeRemoved__c' => [
-                        'force_compare' => false,
-                    ]
-                ]
-            ]
-        ]), $resultConfig);
+        $this->assertEquals($inputOutput, $resultConfig);
     }
 }
