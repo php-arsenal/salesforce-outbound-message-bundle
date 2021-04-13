@@ -9,7 +9,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('arsenal_salesforce_outbound_message');
+        $treeBuilder = new TreeBuilder('salesforce_outbound_message');
         $treeBuilder
             ->getRootNode()
             ->children()
