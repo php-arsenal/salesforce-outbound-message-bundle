@@ -32,6 +32,14 @@ class ConfigurationTest extends TestCase
         $configNode = $configuration->getConfigTreeBuilder()->buildTree();
         $resultConfig = $configNode->finalize($configNode->normalize($inputOutput));
 
-        $this->assertEquals($inputOutput, $resultConfig);
+        $this->assertEquals(array_merge_recursive($inputOutput, [
+            'salesforce_outbound_message' => [
+                'document_paths' => [
+                    'ObjectToBeRemoved__c' => [
+                        'force_compare' => false,
+                    ]
+                ]
+            ]
+        ]), $resultConfig);
     }
 }
