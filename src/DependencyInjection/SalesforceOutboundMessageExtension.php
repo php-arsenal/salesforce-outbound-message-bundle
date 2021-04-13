@@ -12,7 +12,7 @@ class SalesforceOutboundMessageExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $processedConfiguration =$this->processConfiguration($configuration);
+        $processedConfiguration = $this->processConfiguration($configuration, $configs);
 
         DependencyInjectionBuilder::setupConfigurationParameters(
             $container,
@@ -20,7 +20,7 @@ class SalesforceOutboundMessageExtension extends Extension
             'salesforce_outbound_message'
         );
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
     }
 }
