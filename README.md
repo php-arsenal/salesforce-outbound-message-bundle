@@ -52,16 +52,17 @@ class OutboundMessageController extends Controller
 ```
 * add the bundle configuration in your `app/config/config.yml`
 ```yaml
-arsenal_salesforce_outbound_message:
-    # WSDL_CACHE_NONE, WSDL_CACHE_DISK, WSDL_CACHE_MEMORY or WSDL_CACHE_BOTH
-    wsdl_cache: 'WSDL_CACHE_DISK'                     
-    # An absolute path to Salesforce object WSDL files
-    wsdl_directory: '/absolute/path/' 
-    document_paths:
-        # Map a document using its Salesforce name and your local class 
-        CustomObject__c:              
-            path: 'YourNamespace\Documents\CustomObject'
-            force_compare: false # if true, incoming object will be compared to existing ones in the database; will continue sync only if not equal
+arsenal:
+    salesforce_outbound_message:
+        # WSDL_CACHE_NONE, WSDL_CACHE_DISK, WSDL_CACHE_MEMORY or WSDL_CACHE_BOTH
+        wsdl_cache: 'WSDL_CACHE_DISK'                     
+        # An absolute path to Salesforce object WSDL files
+        wsdl_directory: '/absolute/path/' 
+        document_paths:
+            # Map a document using its Salesforce name and your local class 
+            CustomObject__c:              
+                path: 'YourNamespace\Documents\CustomObject'
+                force_compare: false # if true, incoming object will be compared to existing ones in the database; will continue sync only if not equal
 ```
 * Add `DocumentInterface` to the document class you'd like to be tracked by the `OutboundMessageBundle`.
 ```php
