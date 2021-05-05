@@ -26,6 +26,7 @@
     "ext-json": "*",
     "ext-soap": "*",
     "doctrine/mongodb-odm": "^2.2",
+    "php-arsenal/document-value-updater": "^0.1.1",
     "php-arsenal/salesforce-mapper-bundle": "^4.0",
     "symfony/config": "^5.2",
     "symfony/dependency-injection": "^5.2",
